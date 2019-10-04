@@ -10,10 +10,10 @@ namespace Array_1
             for (int i = 0; i < tal.Length; i++)
             {
                 Console.WriteLine("skriv tal");
-                Console.ReadLine();
+                tal[i]=int.Parse (Console.ReadLine());
             }
-
-            
+            for (int i=tal.Length-1;i>=0; i--)
+            Console.WriteLine(tal[i]);
 
 
 
