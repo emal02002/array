@@ -7,7 +7,7 @@ namespace array_2
         static void Main(string[] args)
         {
             double[] temperatur = { 4.5, 3.2, 6.7, 6.1, 2.1, 1.6, 2.9 };
-            Console.WriteLine("Medeltemperatur:" + Math.Round(Medel(temperatur),2));
+            Console.WriteLine("Medeltemperatur:" + Math.Round(Medel(temperatur),1));
            
         }
          public static double Medel(double[] temperatur)
