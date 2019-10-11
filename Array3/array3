@@ -1,0 +1,28 @@
+using System;
+
+namespace array3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double[] temperatur = { 4.5, 3.2, 6.7, 6.1, 2.1, 1.6, 2.9 };
+            Array.Sort(temperatur);
+            int hl = temperatur.Length / 2;
+            int hover = temperatur.Length % 2;
+
+            if (hover == 0)
+            {
+                double sum = temperatur[hl] + temperatur[hl - 1];
+                Console.WriteLine(sum / 2);
+            }
+            else
+                Console.WriteLine("mediantalet är: " + temperatur[hl]);
+
+
+        }
+
+
+
+    }
+}
